@@ -1,0 +1,19 @@
+name: rfdiffusion
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch=2.4.0=*cuda*
+  - torchvision=0.19.0
+  - torchaudio=2.4.0
+  - pytorch-cuda=12.4
+  - conda-forge::mkl<2025.0.0
+  - dglteam/label/th24_cu124::dgl
+  - pandas
+  - pydantic
+  - pip
+  - pip:
+    - hydra-core
+    - pyrsistent
